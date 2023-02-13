@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #acd;
 
   --green: #3D8168;
 
@@ -66,6 +66,10 @@ main {
   border-radius: 0.8em 0 0 0.8em;
   object-fit: contain;
   width: 300px;
+}
+
+.mobile-img {
+  display: none;
 }
 
 .info {
@@ -153,5 +157,64 @@ button>span.label {
 
   button {
     background-color: #f9f9f9;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .component {
+    flex-direction: column;
+    min-height: 611px;
+    width: 343px;
+  }
+
+  .desktop-img {
+    display: none;
+  }
+
+  .mobile-img {
+    display: inline;
+  }
+
+  .display,
+  .info {
+    width: 100%;
+  }
+
+  .display>img {
+    border-radius: 0.8em 0.8em 0 0;
+    object-fit: contain;
+    width: 100%;
+  }
+
+  .info-container {
+    margin: 0 24px;
+  }
+
+  .info {
+    padding: 0;
+  }
+
+  .product-type {
+    margin-top: 24px;
+  }
+
+  .title {
+    margin: 0;
+    margin-top: 10px;
+  }
+
+  .description {
+    margin: 0;
+    margin-top: 16px;
+  }
+
+  .price-container {
+    margin: 0;
+    margin-top: 24px;
+  }
+
+  button.add {
+    margin: 0;
+    margin-top: 20px;
   }
 }
