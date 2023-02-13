@@ -1,0 +1,201 @@
+:root {
+    --dark-blue: #262e38;
+    --orange: #FC7614;
+    --light-grey: #969FAD;
+    --grey: #7C8798;
+}
+
+h3,
+p {
+    margin: 0;
+}
+
+.Rating {
+    background: radial-gradient(ellipse at top, #181E27, transparent),
+        radial-gradient(ellipse at bottom, #232A34, transparent);
+    border-radius: 30px;
+    height: 416px;
+    width: 412px;
+}
+
+.Container {
+    height: 100%;
+    margin: 32px 32px 0 32px;
+}
+
+.Icon {
+    align-items: center;
+    background-color: var(--dark-blue);
+    border-radius: 50%;
+    display: flex;
+    height: 48px;
+    justify-content: center;
+    margin: 32px 0 0 0;
+    width: 48px;
+}
+
+.Option-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 24px 0 0 0;
+    width: 100%;
+}
+
+.Option {
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--dark-blue);
+    color: var(--grey);
+    display: flex;
+    justify-content: center;
+    height: 52px;
+    transition-property: color, background-color;
+    transition-duration: 150ms;
+    transition-timing-function: ease-in;
+    width: 52px;
+}
+
+.Option:hover {
+    background-color: var(--orange);
+    color: white;
+}
+
+.Title {
+    font-family: 'Overpass', Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 35px;
+
+    margin: 30px 0 0 0;
+}
+
+.Description {
+    color: var(--light-grey);
+    font-family: 'Overpass', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+
+    margin: 8px 0 0 0;
+}
+
+.submit-btn {
+    font-family: 'Overpass', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 19px;
+
+    border-radius: 23px;
+    background-color: var(--orange);
+    height: 45px;
+    margin: 32px 0 0 0;
+    transition-property: background-color, color;
+    transition-duration: 150ms;
+    transition-timing-function: ease-in;
+    width: 100%;
+}
+
+button.submit-btn:disabled,
+button.submit-btn[disabled] {
+    background-color: var(--grey);
+}
+
+.submit-btn:hover {
+    background-color: white;
+    color: var(--orange);
+}
+
+.selected-option {
+    background: var(--grey);
+    color: white;
+}
+
+.selected-info-container {
+    align-items: center;
+    background-color: var(--dark-blue);
+    border-radius: 23px;
+    color: var(--orange);
+    display: inline-flex;
+    justify-content: center;
+    padding: 0 20px;
+    height: 32px;
+    margin: 32px auto 0 auto;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+}
+
+img.centered {
+    margin: 0;
+}
+
+.submitted-title {
+    font-family: Overpass, Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 35px;
+    margin-top: 32px;
+}
+
+.submitted-description {
+    margin-top: 8px;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 375px) {
+    .Rating {
+        height: 360px;
+        width: 330px;
+    }
+
+    .Container {
+        height: 100%;
+        margin: 24px;
+    }
+
+    .Icon {
+        height: 40px;
+        width: 40px;
+    }
+
+    .Title {
+        font-size: 24px;
+        margin-top: 16px;
+    }
+
+    .Description {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .Option-container {
+        margin-top: 24px;
+    }
+
+    .Option {
+        height: 42px;
+        width: 42px;
+    }
+
+    .submit-btn {
+        margin-top: 24px;
+        height: 45px;
+    }
+
+    .selected-info-container {
+        margin-top: 24px;
+    }
+
+    .submitted-title {
+        margin-top: 24px;
+    }
+}

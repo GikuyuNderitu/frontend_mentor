@@ -1,0 +1,14 @@
+.App {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+@media screen and (max-width: 375px) {
+  .App {
+    /* height: 360px;
+    width: 330px; */
+  }
+}
