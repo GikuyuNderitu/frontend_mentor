@@ -23,3 +23,7 @@
     --surface: 0deg 0% 2%;
   }
 }
+
+:root.dark {
+  @apply bg-surface
+}
