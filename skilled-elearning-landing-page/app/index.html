@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="stylesheet" href="./dist/style.css">
+
+  <title>Frontend Mentor | Skilled e-learning landing page</title>
+</head>
+
+<body class="bg-slate-100 font-jakarta">
+  <header class="mt-4 mx-6 flex justify-between tablet:mx-10">
+    <h1 class="text-[28px] leading-9 font-extrabold text-dark-blue">skilled</h1>
+    <button
+      class="leading-7 text-base rounded-3xl bg-dark-blue active:bg-lavender text-white px-6 py-2.5 font-bold tablet:hidden desktop:block">
+      Get Started
+    </button>
+  </header>
+
+  <main class="mx-6 mt-10 mb-20 
+           tablet:min-w-[100vw] tablet:flex tablet:flex-col tablet:items-stretch tablet:px-10 tablet:max-w-3xl tablet:mx-0
+           tablet 
+           desktop:max-w-6xl">
+    <div class="hero tablet:flex relative overflow-visible tablet:min-h-[400px]">
+      <div class="hero-info tablet:max-w-sm tablet:min-w-[200px]">
+        <h2 class="text-4xl font-extrabold">
+          Maximize skill, minimize budget
+        </h2>
+        <p class="text-base font-medium leading-7 mt-7">
+          Our modern courses across a range of in-demand skills will give you the
+          knowledge you need to live the life you want.
+        </p>
+
+        <button class="mt-6 bg-gradient-to-t from-pink-gradient-start to-pink-gradient-stop
+           text-white px-10 py-4 rounded-[32px] text-base font-bold leading-7 active:opacity-50">
+          Get Started
+        </button>
+      </div>
+
+      <img src="/image-hero-mobile.webp" alt="Infographic displaying course statistics"
+        class="block mx-auto my-0 tablet:hidden desktop:hidden">
+
+      <img src="/image-hero-tablet.webp" alt="Infographic displaying course statistics"
+        class="hidden desktop:hidden tablet:block absolute -right-64 -top-48 w-[640px]">
+      <!-- <div class="hidden desktop:hidden tablet:inline-block w-96 overflow-hidden">
+      </div> -->
+
+      <img src="/image-hero-desktop.webp" alt="Infographic displaying course statistics"
+        class="hidden desktop:block absolute -right-44 -top-48 w-[640px] -z-10">
+    </div>
+
+
+    <section class="flex flex-col items-center
+                    tablet:grid tablet:grid-cols-2 tablet:content-baseline
+                    tablet:min-w-full tablet:gap-3
+                    desktop:grid-cols-3 desktop:max-w-[1110px] tablet:place-items-center">
+      <div class="flex items-end tablet:min-h-[283px] tablet:pt-14">
+
+        <div class="bg-gradient-to-t from-pink-gradient-start to-pink-gradient-stop rounded-xl py-8 px-7 
+                    tablet:max-w-[350px] tablet:h-[260px] tablet:pt-14">
+          <h3 class="font-extrabold text-2xl leading-8 text-white">
+            Check out our most popular courses!
+          </h3>
+        </div>
+      </div>
+
+
+      <div class="min-w-[340px] max-w-[350px] min-h-[283px] relative mt-8">
+        <img class="absolute z-10 top-[5px] left-8" src="/icon-animation.svg" alt="">
+        <div class="absolute z-0 bottom-0 rounded-xl bg-white px-7 pb-8 pt-14 tablet:h-[260px]">
+          <h4 class="text-xl font-extrabold leading-6">
+            Animation
+          </h4>
+
+          <p class="mt-4 font-medium text-base leading-6 text-grey">
+            Learn the latest animation techniques to create stunning motion
+            design and captivate your audience.
+          </p>
+
+          <button class="text-hot-pink text-lg font-bold leading-7 mt-6 active:opacity-50">
+            Get Started
+          </button>
+        </div>
+      </div>
+
+
+      <div class="min-w-[340px] max-w-[350px] min-h-[283px] relative mt-8">
+        <img class="absolute z-10 top-[5px] left-8" src="/icon-design.svg" alt="">
+        <div class="absolute z-0 bottom-0 rounded-xl bg-white px-7 pb-8 pt-14 tablet:h-[260px]">
+          <h4 class="text-xl font-extrabold leading-6">
+            Design
+          </h4>
+
+          <p class="mt-4 font-medium text-base leading-6 text-grey">
+            Create beautiful, usable interfaces to help shape the future of
+            how the web looks.
+          </p>
+          <button class="text-hot-pink text-lg font-bold leading-7 mt-6 active:opacity-50">
+            Get Started
+          </button>
+        </div>
+      </div>
+
+      <div class="min-w-[340px] max-w-[350px] min-h-[283px] relative mt-8">
+        <img class="absolute z-10 top-[5px] left-8" src="/icon-photography.svg" alt="">
+
+        <div class="absolute z-0 bottom-0 rounded-xl bg-white px-7 pb-8 pt-14 tablet:h-[260px]">
+          <h4 class="text-xl font-extrabold leading-6">
+            Photography
+          </h4>
+
+          <p class="mt-4 font-medium text-base leading-6 text-grey">
+            Explore critical fundamentals like lighting, composition, and focus
+            to capture exceptional photos.
+          </p>
+
+          <button class="text-hot-pink text-lg font-bold leading-7 mt-6 active:opacity-50">
+            Get Started
+          </button>
+        </div>
+      </div>
+
+      <div class="min-w-[340px] max-w-[350px] min-h-[283px] relative mt-8">
+        <img class="absolute z-10 top-[5px] left-8" src="/icon-crypto.svg" alt="">
+        <div class="absolute z-0 bottom-0 rounded-xl bg-white px-7 pb-8 pt-14 tablet:h-[260px]">
+
+          <h4 class="text-xl font-extrabold leading-6">
+            Crypto
+          </h4>
+
+          <p class="mt-4 font-medium text-base leading-6 text-grey">
+            All you need to know to get started investing in crypto. Go from beginner
+            to advanced with this 54 hour course.
+          </p>
+
+          <button class="text-hot-pink text-lg font-bold leading-7 mt-6 active:opacity-50">
+            Get Started
+          </button>
+        </div>
+      </div>
+
+      <div class="min-w-[340px] max-w-[350px] min-h-[283px] relative mt-8">
+        <img class="absolute z-10 top-[5px] left-8" src="/icon-business.svg" alt="">
+        <div class="absolute z-0 bottom-0 rounded-xl bg-white px-7 pb-8 pt-14 tablet:h-[260px]">
+
+          <h4 class="text-xl font-extrabold leading-6">
+            Business
+          </h4>
+
+          <p class="mt-4 font-medium text-base leading-6 text-grey">
+            A step-by-step playbook to help you start, scale, and sustain your business
+            without outside investment.
+          </p>
+
+          <button class="text-hot-pink text-lg font-bold leading-7 mt-6 active:opacity-50">
+            Get Started
+          </button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-dark-blue py-9 flex justify-between px-4">
+    <h1 class="text-white text-3xl">skilled</h1>
+
+
+    <button
+      class="bg-gradient-to-b from-purple-gradient-start to-purple-gradient-stop
+       text-white px-10 py-4 rounded-[32px] text-base font-bold leading-7 purple-get-started-tapped transition-all focus:outline focus:outline-1 focus:outline-purple-300">Get
+      Started</button>
+  </footer>
+</body>
+
+</html>
