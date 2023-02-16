@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Variables overwritten by darkmode */
+    --input-bg-color: 0deg 0% 2%;
+    --primary-text-color: 0deg 0% 18%;
+    --surface: 0deg 0% 100%;
+
+    /* Common Variables */
+    --accent-text-color: 274deg 82% 60%;
+    --divider-color: 0deg 0% 91%;
+    --error-state-color: 0deg 100% 66%;
+    --icon-color: 0deg 0% 51%;
+    --secondary-text-color: 0deg 0% 51%;
+  }
+
+  :root.dark {
+    --input-bg-color: 0deg 0% 12%;
+    --primary-text-color: 0deg 0% 100%;
+    --surface: 0deg 0% 2%;
+  }
+}
